@@ -224,7 +224,7 @@ function Skills() {
         <SectionHeading index="02" title="Technical Skills" subtitle="A focused toolkit for learning how dependable backend applications are designed, built, and maintained." />
         <div className="grid gap-px overflow-hidden border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
           {portfolio.skills.map((skill, index) => {
-            const Icon = icons[index];
+            const Icon = icons[index] ?? Server;
             return <article key={skill.category} className="bg-card p-6 transition-colors hover:bg-background md:p-8"><div className="mb-8 flex size-10 items-center justify-center rounded-sm bg-secondary text-primary"><Icon className="size-5" /></div><h3 className="font-display text-xl font-semibold text-foreground">{skill.category}</h3><ul className="mt-5 space-y-3">{skill.items.map((item) => <li key={item} className="flex items-center gap-3 text-sm text-muted-foreground"><span className="size-1 bg-primary" />{item}</li>)}</ul></article>;
           })}
         </div>
