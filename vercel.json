@@ -1,5 +1,11 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client",
-  "framework": "vite"
+  "framework": "vite",
+  "functions": {
+    "api/index.js": {
+      "includeFiles": ["dist/server/**"]
+    }
+  },
+  "rewrites": [{ "source": "/", "destination": "/api" }]
 }
