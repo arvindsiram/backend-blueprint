@@ -7,7 +7,7 @@ export const portfolio = {
   contactEmail: "arvindsiram11@gmail.com",
   linkedin: "https://www.linkedin.com/in/siram-chiru-arvind-4081bb3a6/",
   github: "https://github.com/ChiruArvind",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/resume.html",
   skills: [
     { category: "Backend", items: ["Java", "Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate", "REST APIs"] },
     { category: "Database", items: ["PostgreSQL", "SQL", "Relational Database Design"] },
